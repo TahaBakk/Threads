@@ -14,9 +14,9 @@ public class Threads extends Thread {
     }
 
     public void run(){
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < val; i++) {
 
-            int value = (int) Math.round(Math.random()*100);
+            int value = (int) Math.round(Math.random()*100+1);
             guardar.fils(fil, value);
             }
         }
